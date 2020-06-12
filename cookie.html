@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+        <meta charset="UTF-8">
+        <title>projektPwl</title>
+        <link rel="stylesheet" href="css/projektstyle.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                margin: 0;
+                background-color: rgba(179, 179, 179, 0.479);
+            }
+        </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="bg-dark">
+            <nav class="row navbar navbar-dark bg-dark d-flex flex-nowrap">
+                <div class="col ml-auto" id="one1">
+                    <a class="navbar-brand" href="index.php">
+                        <img src="images/logochilli2.png" width="50" height="30" class="d-inline-block align-top" alt="">
+                        Chilli
+                    </a>
+                </div>
+                <div class="col-10 ml-auto mr-auto d-md-flex justify-content-end" id="one2">
+                    <form class="d-none d-lg-block form-inline my-2 my-lg-0 justify-content-end flex-nowrap" method="GET" action="szukaj.php">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="szukaj">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Szukaj</button>
+                    </form>
+                    <div class="d-none d-md-block justify-content-end text- mr-3 ml-3">
+                        <a id="one3" class="test-loginButton btn btn--mode-header-login btn--toW5-square" href="#">
+                            <img src="images/pngwave.png" width="25" height="25" class="d-inline-block align-top" alt="">
+                            <span class="space--l-2 hide--toW5">Zarejestruj się / Zaloguj Się</span></a>
+                    </div>
+                    <div class="d-flex justify-content-end" id="dodajbutt">
+                        <a class="btn btn-danger" href="add.php">+Dodaj</a>
+                      </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="box mr-5 ml-5"><br>
+            <h1 class="page2-title">Polityka plików cookie</h1>
+            <div>
+                Cookie to niewielki plik tekstowy, który jest pobierany na Twoje urządzenie podczas odwiedzania stron internetowych. Służy do zapamiętania informacji o Tobie, np.: preferencje językowe, dane logowania. <br><br>
+                <strong>Dlaczego potrzebujemy plików cookie?</strong><br><br>
+            Bez pliku cookie za każdym razem, gdy otwierasz nową stronę internetową, serwer, na którym ta strona jest przechowywana będzie Cię traktował jak zupełnie nowego użytkownika. To może być dość irytujące dla Ciebie jako użytkownika i uniemożliwiłoby korzystanie z naszych stron. Plik cookie pomaga nam zapewnić komfort użytkowania: zapamiętuje wybory dokonywane w związku z ustawieniami konta, preferencjami i zapewnia, że nie wyświetlamy Ci tych samych wiadomości wielokrotnie.
+            <br><br>
+            <strong>Niezbędne pliki cookie</strong><br>
+            <br>
+            Są to pliki cookie, które są niezbędne do funkcjonowania naszej platformy. Służą one do logowania, pozostawania zalogowanym, anonimowego mierzenia naszego ruchu i zapewniają bezpieczeństwo witryny. Bez tego typu technologii nasze usługi nie będą działały poprawnie lub nie będziemy w stanie zapewnić określonych funkcjonalności.
+            <br><br><div>
+                <table>
+                    <tbody><tr><td>
+                            cookie_policy_agreement
+                        <br></td><td>
+                        Ten plik cookie pokazuje, że użytkownik zaakceptował naszą politykę plików cookie i nie musimy jej więcej pytać o jej sprawdzenie.
+                    </td></tr><tr><td>
+                        dont-track
+                    </td><td>
+                        Jeśli ten plik cookie jest uruchomiony, anonimizujemy działania użytkownika - wszelkie zdarzenia związane z użytkownikiem będą zapisywane z naszym numerem śledzenia „0”, a nie identyfikatorem użytkownika.
+                    </td></tr><tr><td>
+                        dmsg
+                    </td><td>
+                        Ten plik cookie pomaga naszej usłudze pamiętać, że użytkownik przeczytał powiadomienie lub wiadomość na stronie
+                    </td></tr><tr><td>
+                        cfo
+                    </td><td>
+                        Ten plik cookie pokazuje, że użytkownik znalazł naszą stronę w sposób organiczny. Umożliwia nam pokazanie jemu jak znaleźć treść, której rzeczywiście szukał.
+                    </td></tr><tr><td>
+                        f_v
+                    </td><td>
+                        Ten plik cookie pokazuje nam, że użytkownik odwiedza naszą witrynę po raz pierwszy.
+                    </td></tr><tr><td>
+                        isy
+                    </td><td>
+                        Jeśli użytkownik odrzuci ankietę, ten plik cookie pomaga naszej usłudze zapamiętać ten fakt (ankieta nie pojawi się ponownie).
+                    </td></tr><tr><td>
+                        bpn_device_subscribed 
+                        <br>
+                        browser_push_permission_requested
+                        <br>
+                        fbpns 
+                        <br>
+                        guest_push_enabled 
+                        <br>
+                        guest_user_visit
+                    </td><td>
+                        Te pliki cookie służą do określania, czy i jak powinniśmy wysyłać użytkownikowi powiadomienia push z przeglądarki. Pozwalają nam dowiedzieć się, ile razy użytkownik-gość otworzył nową stronę, która służy do wyświetlania powiadomienia push w przeglądarce. Wskazują, czy użytkownik niedawno zasubskrybował powiadomienia przeglądarki i czy już udostępniliśmy użytkownikowi opcję powiadomień push w przeglądarce. Służą również do przechowywania informacji, czy powinniśmy włączyć/wyłączyć powiadomienia push przeglądarki użytkownika-gościa.
+                    </td></tr><tr><td>
+                        lcl
+                    </td><td>
+                        Ten plik cookie pozwala nam prawidłowo śledzić kliknięcia
+                    </td></tr><tr><td>
+                        mascot 
+                        <br>
+                        mascot_reserved 
+                        <br>
+                        mascot_check
+                    </td><td>
+                        Te pliki cookie służą do prowadzenia naszej gry – Wielkie Polowanie na Ogniste Renifery. Pozwalają nam upewnić się, że złapany renifer zostanie dodany do Twojego konta. Pozwalają nam również zaprzestać wyświetlania reniferów zalogowanym użytkownikom, jeśli zdecydowali się zrezygnować z gry.
+                    </td></tr><tr><td>
+                        chilli
+                    </td><td>
+                        Ten plik cookie służy do przekierowywania, więc trafiasz na właściwą, lokalną stronę chilli, gdzie możesz potwierdzić swoje preferencje.
+                    </td></tr><tr><td>
+                        chilli_session
+                    </td><td>
+                        Jest to sesyjny plik cookie, używany do zapamiętywania krótkoterminowych informacji, takich jak fakt, że użytkownik jest zalogowany (więc nie jest proszony o podanie danych logowania przy każdym ładowaniu strony).
+                    </td></tr><tr><td>
+                        remember_&lt;some hexadecimal digits&gt;
+                    </td><td>
+                        Plik cookie „zapamiętaj mnie” pomaga użytkownikom pozostać zalogowanym na naszej stronie. Dzięki temu są oni zalogowani przy następnej wizycie (jest to przydatne, jeśli korzystasz z zaufanego urządzenia).
+                    </td></tr><tr><td>
+                        xsrf_t
+                    </td><td>
+                        Ten plik cookie pozwala nam zapobiegać atakom polegającym na fałszowaniu żądań między witrynami.
+                    </td></tr><tr><td>
+                        DI
+                    </td><td>
+                        Ten plik cookie przechowuje działania podejmowane przez użytkowników po wylogowaniu, dzięki czemu możemy je zastosować po ponownym zalogowaniu się użytkowników i upewnić się, że trafią na właściwą stronę
+                    </td></tr><tr><td>
+                        show_voucher
+                    </td><td>
+                        Ten plik cookie pomaga nam wyświetlać zawartość kuponów (pobieranych od partnera).
+                    </td></tr><tr><td>
+                        ur_mod
+                    </td><td>
+                        Ten plik cookie służy do wymuszenia logowania podczas wysyłania wiadomości e-mail do użytkowników nieaktywnych przez ponad 3 lata.
+                    </td></tr><tr><td>
+                        u_l
+                    </td><td>
+                        Ten plik cookie pozwala nam określić, czy użytkownik jest wylogowany w celurr buforowania w usługach sieciowych dostarczania treści.
+                    </td></tr><tr><td>
+                        f_c
+                    </td><td>
+                        Ten plik cookie zapamiętuje, że użytkownik zrezygnował z funkcjonalnych plików cookie
+                    </td></tr></tbody></table><br>
+                Ponadto używamy plików cookie stron trzecich:
+                <br><br></div><ul><li>Google Analytics - przeczytaj więcej o ich <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=en" target="_blank">plikach cookie</a> i <a href="https://policies.google.com/privacy?hl=en-GB" target="_blank">polityce prywatności</a>.</li><li>Cloudflare - przeczytaj więcej o ich <a href="https://support.cloudflare.com/hc/en-us/articles/200170156-Understanding-the-Cloudflare-Cookies#12345685" target="_blank">plikach cookie</a> i <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">polityce prywatności</a>.</li><li>Zaloguj przez Facebook  - przeczytaj więcej o ich <a href="https://developers.facebook.com/docs/facebook-login/web" target="_blank">plikach cookie</a> i <a href="https://www.facebook.com/policy.php" target="_blank">polityce prywatności</a>.</li><li>Zaloguj przez Google i Google reCAPTCHA - przeczytaj więcej na temat ich <a href="https://policies.google.com/technologies/types" target="_blank">plików cookie</a> oraz <a href="https://policies.google.com/privacy?hl=en-GB" target="_blank">polityki prywatności</a>.</li><li>Zaloguj z Apple - przeczytaj więcej na temat ich <a href="https://www.apple.com/legal/privacy/en-ww/cookies/" target="_blank">plików cookie</a> oraz <a href="https://www.apple.com/legal/privacy/" target="_blank">polityki prywatności</a>.</li></ul><br><strong>Funkcjonalne pliki cookie<br><br></strong>Są to pliki cookie niezbędne do działania naszych usług tj.: do przechowywania niektórych informacji (np. preferencje językowe), zapamiętywania ustawionych preferencji itp.<br><br><div><table><tbody><tr><td>
+                            g_p
+                        <br></td><td>
+                        Jeśli użytkownicy-goście spersonalizują przeglądanie, ten plik cookie gwarantuje, że możemy spełnić ich preferencje.
+                    </td></tr><tr><td>
+                        discussions_widget_selected_option
+                    </td><td>
+                        Ten plik cookie przechowuje informacje o tym jaki typ dyskusji pokazywać wylogowanym użytkownikom (ostatnie, czy popularne).
+                    </td></tr><tr><td>
+                        hds
+                    </td><td>
+                        Ten plik cookie określa przedział czasu pokazywany przez widget najgorętszych okazji.
+                    </td></tr><tr><td>
+                        hidden_banners
+                    </td><td>
+                        Ten plik cookie służy do przechowywania informacji na temat banerów, które użytkownik postanowił ukryć.
+                    </td></tr><tr><td>
+                        hide_discussion_header_widget
+                    </td><td>
+                        Ten plik cookie określa, czy nagłówek grup dyskusyjnych ma być wyświetlany w powiązanej sekcji.
+                    </td></tr><tr><td>
+                        hide_expired
+                    </td><td>
+                        Ten plik cookie zapamiętuje preferencje użytkownika odnośnie filtrowania "ukryj zakończone".
+                    </td></tr><tr><td>
+                        hide_homepage_banner
+                    </td><td>
+                        Ten plik cookie zapamiętuje preferencje użytkownika odnośnie wyświetlania baneru na stronie głównej.
+                    </td></tr><tr><td>
+                        hide_local
+                    </td><td>
+                        Ten plik cookie zapamiętuje preferencje użytkownika odnośnie filtrowania "ukryj lokalne okazje".
+                    </td></tr><tr><td>
+                        hide_merchants_widget
+                    </td><td>
+                        Ten plik cookie zapamiętuje preferencje użytkownika odnośnie wyświetlania widżetu sprzedawcy.
+                    </td></tr><tr><td>
+                        hide_nsfw
+                    </td><td>
+                        Ten plik cookie zapamiętuje preferencje użytkownika odnośnie filtrowania "ukryj obrazki okazji 18+".
+                    </td></tr><tr><td>
+                        hide_price_comparison
+                    </td><td>
+                        Ten plik cookie zapamiętuje preferencje użytkownika - czy wyniki porównania cen powinny być wyświetlane na stronie wyszukiwania.
+                    </td></tr><tr><td>
+                        hide_recent_discussion_widget
+                    </td><td><br>
+                        Ten plik cookie zapamiętuje preferencje użytkownika - czy widżet ostatnich dyskusji powinien być wyświetlany.
+                    </td></tr><tr><td>
+                        location
+                    </td><td>
+                        Ten plik cookie zapamiętuje preferencje użytkownika - śledzi wybraną lokalizację w ustawieniach filtra widoku.
+                    </td></tr><tr><td>
+                        pin_search_filter
+                    </td><td>
+                        Ten plik cookie śledzi pozycję widżetu filtrowania na stronach wydarzeń.
+                    </td></tr><tr><td>
+                        Show_user_tour 
+                        <br>
+                        user_tour_status
+                    </td><td>
+                        Te pliki cookie przechowują informacje na temat postępu wykonania samouczka przez nowgo użytkownika.
+                    </td></tr><tr><td>
+                        sort_by
+                    </td><td>
+                        Ten plik cookie zapamiętuje preferencje użytkownika - śledzi wybraną opcję sortowania w opcjach filtru wyszukiwania.
+                    </td></tr><tr><td>
+                        sufnews 
+                        <br>
+                        optedOutOfNewsletter 
+                        <br>
+                        tg 
+                        <br>
+                        keywords
+                    </td><td>
+                        Te pliki cookie zapamiętują: czy użytkownik zarejestrował się lub zrezygnował z newslettera, czy zdecydował się ukryć widget promujący powiadomienia lub jeden z naszych kanałów mediów społecznościowych. Zapobiega wyświetlaniu tych widżetów ponownie.
+                    </td></tr><tr><td>
+                        time_frame
+                    </td><td><br>
+                        Ten plik cookie zapamiętuje preferencje użytkownika - śledzi wybraną opcję „od” w opcjach filtru wyszukiwania.
+                    </td></tr><tr><td>
+                        view_layout_horizontal
+                    </td><td><br>
+                        Ten plik cookie zapamiętuje preferencje użytkownika - śledzi wybraną opcję widoku w ustawieniach filtra widoku.
+                    </td></tr><tr><td>
+                        hide_discussions_widget
+                    </td><td>
+                        Ten plik cookie zapamiętuje preferencje użytkownika odnośnie pokazywania widżetu dyskusji.
+                    </td></tr><tr><td>
+                        merchant_search_results
+                    </td><td><br>
+                        Ten plik cookie zapamiętuje preferencje użytkownika - czy widżet wyszukiwania sprzedawcy powinien być pokazywany.
+                    </td></tr><tr><td>
+                        event_top_merchants
+                    </td><td>
+                        Ten plik cookie zapamiętuje preferencje użytkownika - czy pokazywać najlepszych sprzedawców w widżecie wydarzeń.
+                    </td></tr><tr><td>
+                        related_merchants
+                    </td><td><br>
+                        Ten plik cookie zapamiętuje preferencje użytkownika - określa, czy widżet podobnych sprzedawców powinien być wyświetlany.
+                    </td></tr><tr><td>
+                        related_groups
+                    </td><td><br>
+                        Ten plik cookie zapamiętuje preferencje użytkownika odnośnie wyświetlania widżetu podobnych grup.
+                    </td></tr><tr><td>
+                        top_groups
+                    </td><td>
+                        Ten plik cookie zapamiętuje preferencje użytkownika odnośnie widżetu najlepszych grup.
+                    </td></tr><tr><td>
+                        navi
+                    </td><td>
+                        Ten plik cookie zapamiętuje preferencje użytkownika odnośnie pozycji wyświetlania widżetu najgorętszych ofert.
+                    </td></tr><tr><td>
+                        q
+                    </td><td>
+                        Ten plik cookie przechowuje preferencje użytkownika; „wyszukiwane hasła” w opcjach filtru wyszukiwania.<br></td></tr></tbody></table></div><br><button class="link cept-privacy-page-toggle-functionality-cookies" data-handler="replace" data-replace="{&quot;endpoint&quot;:&quot;https://www.chilli.pl/profile/allow-functionality-cookies/privacy-page/toggle&quot;,&quot;params&quot;:{&quot;allow_functionality_cookies&quot;:&quot;off&quot;}}">
+                    Zrezygnuj z funkcjonalnych plików cookie</button><br><br><strong>Analityczne pliki cookie</strong><br><br>
+            Są to pliki cookie, które służą do zbierania informacji o tym, jak korzystasz z naszych usług i odwiedzasz naszą platformę (czas trwania nawigacji, odwiedzane strony, kliknięty link, strona odsyłająca itp.).
+            <br><div><table><tbody><tr><td>
+                            ab_d
+                        <br></td><td>
+                        Ten plik cookie określa, w której grupie testu A/B znajduje się użytkownik.
+                    </td></tr></tbody></table><br>
+                Ponadto używamy plików cookie stron trzecich, aby pomóc nam zdobyć informacje na temat zachowań użytkowników oraz zapewnić, że nasze usługi są dostosowane do ich potrzeb. Te pliki cookie pochodzą z:
+                <br><ul><li>VWO - przeczytaj więcej o ich <a href="https://help.vwo.com/hc/en-us/articles/360033990873-Cookies-Stored-by-VWO" target="_blank">plikach cookie</a> oraz <a href="https://vwo.com/privacy-policy/" target="_blank">polityce prywatności</a>.</li><li>Facebook Analytics - przeczytaj więcej o ich <a href="https://www.facebook.com/business/help/471978536642445" target="_blank">plikach cookie</a> oraz <a href="https://www.facebook.com/policy.php" target="_blank">polityce prywatności</a>.</li></ul><br><span class="cept-tracking-link link" tabindex="0" data-handler="replace" data-replace="{&quot;endpoint&quot;:&quot;\/profile\/toggle-allow-tracking&quot;,&quot;params&quot;:{&quot;context&quot;:&quot;privacy&quot;,&quot;allow_tracking&quot;:&quot;off&quot;}}">
+                                Zrezygnuj ze śledzenia
+                        </span><br><br><strong>Jak kontrolować pliki cookie?<br></strong><br>
+                Większość przeglądarek internetowych umożliwia kontrolę nad większością plików cookie za pomocą ustawień przeglądarki. Aby dowiedzieć się więcej na temat plików cookie, odwiedź 
+                <a href="http://www.aboutcookies.org" target="_blank">www.aboutcookies.org</a> lub <a href="http://www.allaboutcookies.org" target="_blank">www.allaboutcookies.org</a><br></div><br>
+            Możesz również zmienić ustawienia w swojej przeglądarce:
+            <br><ul><li><a href="http://support.microsoft.com/kb/278835" target="_blank">Internet Explorer</a></li><li><a href="https://support.google.com/chrome/answer/95647?hl=en-GB" target="_blank">Chrome</a></li><li><a href="http://support.mozilla.org/en-US/kb/Clear%20Recent%20History" target="_blank">Firefox</a></li><li><a href="http://support.apple.com/kb/PH5042" target="_blank">Safari</a></li><li><a href="http://www.opera.com/help/tutorials/security/privacy/" target="_blank">Opera</a></li></ul><br>
+            Chociaż możesz wyłączyć korzystanie z plików cookie za pomocą ustawień przeglądarki, pamiętaj, że nie zmieniamy naszych praktyk w odpowiedzi na żądanie „Nie śledź” w nagłówku HTTP z przeglądarki lub aplikacji mobilnej z powodu braku standaryzacji w zakresie interpretacji takiego żądania.
+            <br></div><br>
+        </div>
+
+
+        <div>
+            <hr style="height: 3px; border: 0px; margin: 0; padding: 0; margin-left: 0;" class="bg-dark">
+        </div>
+        
+        <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+            <div class="container text-center text-md-left">
+            <div class="row">
+            <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1" id="footerinfo">
+                <img src="images/logochilli2.png" width="50" height="30" class="d-inline-block align-top" alt="">
+                <h5 class="mb-4">Największa społeczność łowców okazji w Polsce</h5>
+                <p>Chilli.pl to społeczność dla osób poszukujących prawdziwych okazji. Znajdź, oceniaj i komentuj najlepsze okazje i kupony znalezione w internecie i poza nim.</p>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+                <h5 class="font-weight-bold text-uppercase mb-4">Firma</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <p>
+                            <a href="oNas.html">O Nas</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="kontakt.html">Kontakt</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+                <h5 class="font-weight-bold text-uppercase mb-4" style="white-space: nowrap;">Informacje prawne</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <a href="regulamin.html">Regulamin</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="cookie.html">Polityka plików cookie</a>
+                            </p>
+                        </li>
+                    </ul>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-2 col-lg-2 text-center mx-auto my-4" style="white-space: nowrap;">
+                <h5 class="font-weight-bold text-uppercase mb-4">Obserwuj nas</h5>
+                    <a class="btn-floating btn-fb" href="https://www.facebook.com/pl.pepper">
+                        <i class="fa fa-facebook-official" style="font-size:48px"></i>
+                    </a><br>
+                    <a class="btn-floating btn-tw" href="https://www.linkedin.com/company/pepper.com/">
+                        <i class="fa fa-linkedin-square" style="font-size:48px" ></i>
+                    </a>
+            </div>
+            </div>
+            </div>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="index.php"> Chilli.pl</a>
+            </div>
+        </footer>
+
+        </div>
+
+        <div class="popup">
+        <form method="POST" action="logcheckuser.php">
+            <div class="popup-content">
+                <img src="images/close.png" alt="Close" class="close">
+                <img src="images/user.png" alt="User" width="70" height="70" id="user">
+                <input type="text" placeholder="Login" name="login">
+                <input type="text" placeholder="Hasło" name="password">
+                <button class="button btn btn--mode-header-login btn--toW5-square logbutton" type="submit" style="background-color: white; margin: 20px;">Zaloguj się</button>
+                <a href="newuser.html" class="button btn btn--mode-header-login btn--toW5-square logbutton" style="background-color: white; margin: 20px;">Utwórz nowe konto</a>
+            </div>
+        </form>
+        </div>
+        <script>
+            document.getElementById("one3").addEventListener("click", function(){
+                document.querySelector(".popup").style.display = "flex";
+            })
+    
+            document.querySelector(".close").addEventListener("click", function(){
+                document.querySelector(".popup").style.display = "none";
+            })
+        </script>
+</body>

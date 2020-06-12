@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+        <meta charset="UTF-8">
+        <title>projektPwl</title>
+        <link rel="stylesheet" href="css/projektstyle.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                margin: 0;
+                background-color: rgba(179, 179, 179, 0.479);
+            }
+        </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="bg-dark">
+            <nav class="row navbar navbar-dark bg-dark d-flex flex-nowrap">
+                <div class="col ml-auto" id="one1">
+                    <a class="navbar-brand" href="index.php">
+                        <img src="images/logochilli2.png" width="50" height="30" class="d-inline-block align-top" alt="">
+                        Chilli
+                    </a>
+                </div>
+                <div class="col-10 ml-auto mr-auto d-md-flex justify-content-end" id="one2">
+                    <form class="d-none d-lg-block form-inline my-2 my-lg-0 justify-content-end flex-nowrap" method="GET" action="szukaj.php">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="szukaj">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Szukaj</button>
+                    </form>
+                    <div class="d-none d-md-block justify-content-end text- mr-3 ml-3">
+                        <a id="one3" class="test-loginButton btn btn--mode-header-login btn--toW5-square" href="#">
+                            <img src="images/pngwave.png" width="25" height="25" class="d-inline-block align-top" alt="">
+                            <span class="space--l-2 hide--toW5">Zarejestruj się / Zaloguj Się</span></a>
+                    </div>
+                    <div class="d-flex justify-content-end" id="dodajbutt">
+                        <a class="btn btn-danger" href="add.php">+Dodaj</a>
+                      </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="staticPageHtml cept-static-page ml-5 mr-5">
+            <br>
+            <strong>Regulamin Chilli<br></strong>
+            Poprzez rejestrację zobowiązujesz się do przestrzegania naszego regulaminu. Dotyczy to całego serwisu,
+            włączając w to dyskusję, wiadomości, okazje, kupony itd.<br><br>
+            <strong>I. Nazwa użytkownika, avatar i konto<br></strong> Każdy użytkownik to realna osoba, dlatego prosimy
+            o respektowanie poglądów oraz opinii innych.<br>
+            <ul>
+                <li>Wybierz nazwę użytkownika oraz avatar, które nie są obraźliwe. Jeżeli zostaną uznane za takie, mogą
+                    zostać usunięte bez ostrzeżenia.
+
+                </li>
+                <li>Konta użytkowników wybierających nazwę użytkownika mającą na celu podszycie się pod inną osobę lub
+                    instytucję zostaną zablokowane na stałe.
+
+                </li>
+                <li>
+                    Pozwalamy na jedno konto w ramach gospodarstwa domowego, grupy itp. Multikonta tworzone bez
+                    porozumienia z administracją strony zostaną zablokowane na stałe.
+                </li>
+                <li>
+                    Nigdy publikuj informacji osób trzecich uznawanych za personalne lub prywatne bez ich zgody.
+                </li>
+                <li>
+                    Konta utworzone w serwisie Chilli nie mogą być sprzedawane ani użyczane osobom trzecim.
+                </li>
+                <li>
+                    Konta korzystające z połączenia VPN lub z zagranicznych numerów IP mogą zostać zablokowane.
+                </li>
+            </ul>
+            <strong><br>
+
+                II. Spam<br>
+            </strong>W Chilli mamy zero tolerancji dla spamu. Wszystko co zostanie za niego uznane jest usuwane, a konto
+            osoby spamującej blokowane.<br>
+            Za spam uznajemy:
+            <br>
+            <ul>
+                <li>
+                    Puste wiadomości, cytaty bez nowej zawartości lub uzasadnionego znaczenia i powtarzające się
+                    pytania, zdjęcia lub nie mające sensu słowa i zdania. Komentarze niezwiązane z publikacją.
+                </li>
+                <li>
+                    Pornografia, zdjęcia pornograficzne i seksualnie obraźliwy materiał.
+                </li>
+                <li>
+                    Autopromocja oraz rekomendacja przy czerpaniu z tego tytułu korzyści włączając w to: pracowników,
+                    rodzinę, znajomych, sieci afiliacyjne, agencje marketingowe, SEO, PR itp., ankiety, akcje
+                    charytatywne, konkursy (nie dotyczy tych organizowanych przez Chilli.pl), prywatne aukcje, linki do
+                    własnych stron, reflinki, kody polecające, reklamy, zamieszczanie prywatnego adresu e-mail, ofert
+                    sprzedaży.
+                </li>
+                <li>
+                    Publikacje, które nie zawierają linku bezpośredniego do strony z okazją.
+                </li>
+                <li>
+                    Aktywność o charakterze politycznym.
+                </li>
+                <li>
+                    Okazje o charakterze religijnym.
+                </li>
+                <li>
+                    Oferty sprzedaży żywych zwierząt.
+                </li>
+                <li>
+                    Okazje z bronią pneumatyczną oraz replikami broni.
+                </li>
+                <li>
+                    Zduplikowane wątki zostaną usunięte jeśli zostały opublikowane ponownie w ciągu 60 dni (nie
+                    obowiązuje tylko w przypadku okazji, które od samego początku mają dłuższy niż 60 dni okres
+                    obowiązywania). Dublem nie jest nowa okazja, gdy w momencie jej dodania, identyczna publikacja ma
+                    status zakończono. W przypadku zmiany ceny w ciągu 14 dni od oryginalnej publikacji, dodanie nowej
+                    okazji (różniącej się jedynie ceną) zostanie potraktowane jako dubel.
+                </li>
+                <li>
+                    Bezzasadne usuwanie treści, wznawianie zakończonych lub kończenie aktywnych wątków.
+                </li>
+                <li>
+                    Obraźliwe treści i przekleństwa.
+                </li>
+                <li>
+                    Wątki nawiązujące do użytkownika, który został zablokowany lub zawieszony.
+                </li>
+                <li>
+                    Spam rozsyłany poprzez prywatne wiadomości. Spowoduję zablokowanie konta wysyłającego.
+                </li>
+                <li>
+                    Materiały naruszające obowiązujące prawo.
+                </li>
+                <li>
+                    Publikacje, w których ceny nie są okazją.
+                </li>
+                <li>
+                    Oferty od prywatnych sprzedawców.
+                </li>
+                <li>
+                    Okazje o zbyt lokalnym charakterze (bazar, sklep itp.).
+                </li>
+                <li>
+                    Produkty w małej ilości.
+                </li>
+                <li>
+                    Produkty spożywcze z krótkim terminem przydatności do spożycia.
+                </li>
+                <li>
+                    Publikacje bez lub zawierające mniej niż 5 słów opisu.
+                </li>
+                <li>
+                    Oferty z zagranicznych sklepów bez podania ceny w obcej jak i polskiej walucie.
+                </li>
+            </ul>
+            <strong>III.Trollowanie
+                <br></strong>Trolling nie jest tolerowany w Chilli!<br>
+            <ul>
+                <li>
+                    Troll to osoba, która bez przyczyny zakłóca prawidłowe funkcjonowanie obszarów serwisu poprzez
+                    publikowanie treści niezwiązanych tematycznie, rzucając obelgami, atakując innych użytkowników i
+                    celowo tworzą kłótnie oraz negatywną atmosferę.
+                </li>
+                <li>
+                    Posty użytkowników oraz grup, które nieustannie atakują innych użytkowników z powodu ich poglądów i
+                    opinii oraz mających na celu poniżanie będą kasowane, a sami twórcy zablokowani.
+                </li>
+            </ul>
+            <strong><br>
+                IV.Rasizm, Religia, Seksualność
+            </strong><br>
+            Atak na osobę lub grupę z powodu ich wiary, rasy, koloru skóry, preferencji seksualnych nie będzie
+            tolerowany, a działania administracji będą podjęte bez ostrzeżenia.
+            <br>
+            <ul>
+                <li>
+                    Osobiste preferencje seksualne, wyznania religijne, poglądy polityczne i inne osobiste przekonania
+                    powinny być zawsze szanowane.
+                </li>
+                <li>
+                    Dyskusja odnośnie tych zagadnień powinna być oznaczona oddzielnym tematem i zachować konstruktywizm
+                    oraz cechować się poszanowaniem innych.
+                </li>
+            </ul>
+            <strong><br>
+                V.Przekleństwa, wulgaryzmy i nieuprzejme zachowania
+                <br></strong>Strona posiada system filtrujący, aby ograniczyć w miarę możliwości przekleństwa i
+            wulgaryzmy w komentarzach.<br>
+            <ul>
+                <li>
+                    Każda próba ominięcia filtrów w jakikolwiek sposób skutkować będzie usunięciem komentarza i
+                    otrzymaniem ostrzeżenia.
+                </li>
+                <li>
+                    Nieuprzejme zachowania, prowokacyjne komentarze nie są mile widziane w naszym serwisie i będą
+                    usuwane przez administrację.
+                </li>
+                <li>
+                    Pisanie obraźliwych słów jest niedozwolone.
+                </li>
+            </ul>
+            <br>
+            <strong>VI.Raportowanie obraźliwych komentarzy<br>
+            </strong>Każdy użytkownik ma możliwość poinformować administratorów o nieodpowiednim komentarzu, jeśli ten
+            łamie regulamin serwisu. Chcemy tworzyć przyjazny serwis dla każdego, i będziemy Ci wdzięczni jeśli nam w
+            tym pomożesz.<br>
+            <ul>
+                <li>
+                    Przycisk „Zgłoś” znajduje się pod każdym komentarzem.
+                </li>
+                <li>
+                    Powiadomienie o nadużyciu otrzyma niezwłocznie administracja. Warto dodać informację, co zwróciło
+                    Twoją uwagę w komentarzu.
+                </li>
+                <li>
+                    Nie odpowiadaj na obraźliwe komentarze. Pozostaw je, aby mógł się nimi zająć jeden z moderatorów.
+                    Zostanie to uczynione tak szybko, jak to możliwe.
+                </li>
+                <li>
+                    Odpowiadanie na obraźliwe posty, stosując obraźliwe słownictwo oraz wzbudzanie większej agresji w
+                    autorze, traktowane będzie jako złamanie regulaminu przez strony uczestniczące.
+                </li>
+                <li>
+                    Niewłaściwe używanie systemu ocen oraz nadużywanie przycisków: „Zakończ” i/lub „Zgłoś” będzie
+                    prowadzić do ograniczeń na koncie użytkownika.
+                </li>
+            </ul>
+            <br><strong>VII.Administracja i Moderatorzy<br></strong>
+            Powyższe regulacje zobowiązują do ich respektowania. Nad ich przestrzeganiem czuwają Moderatorzy. Są oni po
+            to, aby utrzymać serwis tak przyjaznym, jak tylko to możliwe. Istnieją również użytkownicy, którzy posiadają
+            większe uprawniania i pomagają moderatorom w utrzymaniu serwisu. Pamiętaj jednak, że jesteśmy ludźmi i
+            czasami popełniamy pomyłki. Jeśli nie zgadzasz się z decyzją Moderatora, proszę opisz swoją sprawę wysyłając
+            do nas wiadomość za pomocą opcji „Kontakt”, która znajduje się na dole strony. Administracja ma decydujące
+            zdanie w każdym sporze i we wszystkich sprawach rozstrzyganych na stronie.<br>
+            <br><strong>VIII.Dodatkowe regulacje<br></strong>
+            Nikt nie jest wszechwiedzący i każdy się uczy od innych. Podczas rozrastania się społeczności my również
+            uczymy się od Was. Każdy z Was może mieć pomysł odnośnie naszego serwisu. Jeżeli już na coś wpadniesz i
+            chcesz przyczynić się do tego, aby ten serwis był jeszcze lepszy z chęcią przedyskutujemy to w dziale
+            Dyskusje.<br>
+            Prosimy o przyjazne, cywilizowane i pełne szacunku wypowiedzi. Wszystkie te regulacje mają na celu
+            stworzenie przyjaznego serwisu dla użytkowników. Podczas naszej pracy będziemy się starać jak najlepiej dbać
+            o taki wizerunek. Czasami jednak nie jesteśmy w stanie sprawdzić i ocenić każdego komentarza, czy zgłoszenia
+            nadużycia. Prosimy o wyrozumiałość, jeśli coś pominiemy lub nieodpowiednio zareagujemy na zgłoszenie.
+            <br><strong>Obecnie nie pozwalamy na interakcję sprzedawców, firm z użytkownikami, dlatego utworzone przez
+                nich konta bedą blokowane.</strong><br><br><strong>IX.Ocenianie Okazji<br></strong>Podczas głosowania na
+            wybrane okazje i kupony (+ oznacza okazję gorącą, - okazję zimną), należy to robić uczciwie. Prosimy o
+            uzasadnienie negatywnych głosów. Pozostawiając komentarze z konstruktywną krytyką, pozwolisz na poprawę
+            jakości publikowanych materiałów innym użytkownikom w
+            przyszłości.<br><br><strong>X.Oczekiwania<br></strong>Aktualny adres mailowy powinien być dodany w Twoim
+            profilu, aby umożliwić nam kontakt w razie potrzeby. Dodawanie tej samej wiadomości lub tematu w więcej niż
+            jednym dziale nie jest konieczne, należy upewnić się czy została wybrana odpowiednia kategoria, przed
+            dodaniem okazji lub kuponu.<br>
+            W Chilli możesz:
+            <br>
+            <ul>
+                <li>
+                    dodawać okazje<br>
+                    <ul>
+                        <li>
+                            dotyczące pojedynczych produktów (np. Męska koszula za 26zł + darmowa dostawa)
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    dodawać kupony<br>
+                    <ul>
+                        <li>
+                            dotyczące akcji promocyjnej, gdzie mamy kilka produktów w promocji (np. Stroje karnawałowe
+                            -30%)
+                        </li>
+                        <li>
+                            kody rabatowe (np. 20% rabatu do sieci Da Grasso z kodem…)</li>
+                    </ul>
+                </li>
+                <li>
+                    rozpocząć dyskusję
+                </li>
+                <li>
+                    pozostawić feedback (przekazać opinie, zadać pytanie, zgłosić błąd)
+                </li>
+            </ul>
+            Zastrzegamy sobie prawo do usunięcia wszelkich promocji, tematów, komentarzy oraz wpisów - także tych w
+            profilu lub innych miejscach, w dowolnym momencie i według własnego uznania. Zawsze staramy się komunikować
+            to ogłoszeniem lub komentarzem, tam gdzie tylko jest to możliwe. W momencie gdy dodajesz komentarz, okazję
+            itd, prosimy o sprawdzenie materiału przed użyciem przycisku "dodaj". Ostatnią rzeczą, jaką chcemy widzieć
+            jest dyskusja obracająca się w kłótnię z przesadzonymi argumentami.
+            <br><br><strong>XI.Punkty karne, zawieszenia oraz blokady<br></strong>Nasi moderatorzy będą dodawać punkty
+            karne za poważne lub szkodliwe działania, powtarzające się wykroczenia lub rażące naruszenia wyżej
+            wymienionych punktów. Punkty karne powinny być traktowane przez użytkowników jako przypomnienie, aby
+            szanować innych członów społeczności Chilli oraz przestrzegać regulaminu. Początkowo można otrzymać
+            ostrzeżenie. Jeśli jednak członek społeczności w dalszym ciągu narusza przyjęte zasady, mogą zostać na niego
+            nałożone kolejne punkty. Wszystkie punkty karne są aktywne przez trzydzieści dni, jeśli użytkownik otrzyma
+            kolejne, przed datą wygaśnięcia poprzednich, te kumulują się oraz data ich ważności jest
+            przedłużana.<br><br>
+            <ul>
+                <li>
+                    2 punkty = jeden dzień zawieszenia konta
+                </li>
+                <li>
+                    4 punkty = trzy dni zawieszenia konta
+                </li>
+                <li>
+                    6 punktów = pięć dni zawieszenia konta
+                </li>
+                <li>
+                    8 punktów = dwa tygodnie zawieszenia konta
+                </li>
+                <li>
+                    10 punktów = 30 dni zawieszenia konta
+                </li>
+                <li>
+                    12 punktów = blokada konta
+                </li>
+            </ul><br>
+            Jeśli punkty karne zostały dodane po wygaśnięciu poprzednich, sekwencja zawieszenia liczona jest od
+            początku. Najpoważniejsze naruszenia regulaminu mogą spowodować permanentną blokadę konta, bez
+            wcześniejszego ostrzeżenia.
+            <br>
+            Jeśli nie zgadzasz się z punktami za wykroczenia, które otrzymałeś, skontaktuj się z nami najszybciej jak to
+            możliwe.
+            <br><br>
+            Zasady regulaminu Chilli mogą być zmienione lub aktualizowane w dowolnym momencie - prosimy o ich regularne
+            sprawdzanie.
+            <br><br><strong>Finansowanie Chilli</strong><br>
+            Aby nasze serwery mogły ciągle pracować, a aplikacje mobilne i nowe funkcje być rozwijane musimy dbać o
+            nasze finanse. Używamy i testujemy różne sposoby na pozyskiwanie pieniędzy, aby zapewnić Wam najlepsze
+            okazje i sposoby na oszczędności. Jako entuzjaści okazji wiemy, że: wyświetlanie banerów reklamowych,
+            używanie Twojego adresu email w celach marketingowych, czy przekazywanie Twoich danych osobom trzecim nie
+            jest dobrym rozwiązaniem i nie jest częścią naszego modelu monetyzacji. Obecnie stosujemy linki, dzięki
+            którym otrzymamy prowizję jeżeli produkt zostanie przez Ciebie zakupiony – cena dla Ciebie się nie zmieni, a
+            pokrycie kosztów prowizji leży po stronie sklepu. Zarejestrowani użytkownicy mogą publikować okazje oraz je
+            oceniać. Wierzymy, że taki schemat działania Chilli zapewnia mu całkowitą bezstronność i niezależność. W
+            przyszłości możemy także próbować innych sposobów finansowania, ale przy ich wyborze zawsze mamy na uwadze
+            interesy naszych użytkowników<br>
+        </div>
+        <br>
+
+        <div>
+            <hr style="height: 3px; border: 0px; margin: 0; padding: 0; margin-left: 0;" class="bg-dark">
+        </div>
+        
+        <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+            <div class="container text-center text-md-left">
+            <div class="row">
+            <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1" id="footerinfo">
+                <img src="images/logochilli2.png" width="50" height="30" class="d-inline-block align-top" alt="">
+                <h5 class="mb-4">Największa społeczność łowców okazji w Polsce</h5>
+                <p>Chilli.pl to społeczność dla osób poszukujących prawdziwych okazji. Znajdź, oceniaj i komentuj najlepsze okazje i kupony znalezione w internecie i poza nim.</p>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+                <h5 class="font-weight-bold text-uppercase mb-4">Firma</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <p>
+                            <a href="oNas.html">O Nas</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="kontakt.html">Kontakt</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+                <h5 class="font-weight-bold text-uppercase mb-4" style="white-space: nowrap;">Informacje prawne</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <a href="regulamin.html">Regulamin</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="cookie.html">Polityka plików cookie</a>
+                            </p>
+                        </li>
+                    </ul>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-2 col-lg-2 text-center mx-auto my-4" style="white-space: nowrap;">
+                <h5 class="font-weight-bold text-uppercase mb-4">Obserwuj nas</h5>
+                    <a class="btn-floating btn-fb" href="https://www.facebook.com/pl.pepper">
+                        <i class="fa fa-facebook-official" style="font-size:48px"></i>
+                    </a><br>
+                    <a class="btn-floating btn-tw" href="https://www.linkedin.com/company/pepper.com/">
+                        <i class="fa fa-linkedin-square" style="font-size:48px" ></i>
+                    </a>
+            </div>
+            </div>
+            </div>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="index.php"> Chilli.pl</a>
+            </div>
+        </footer>
+
+        </div>
+
+        <div class="popup">
+        <form method="POST" action="logcheckuser.php">
+            <div class="popup-content">
+                <img src="images/close.png" alt="Close" class="close">
+                <img src="images/user.png" alt="User" width="70" height="70" id="user">
+                <input type="text" placeholder="Login" name="login">
+                <input type="text" placeholder="Hasło" name="password">
+                <button class="button btn btn--mode-header-login btn--toW5-square logbutton" type="submit" style="background-color: white; margin: 20px;">Zaloguj się</button>
+                <a href="newuser.html" class="button btn btn--mode-header-login btn--toW5-square logbutton" style="background-color: white; margin: 20px;">Utwórz nowe konto</a>
+            </div>
+        </form>
+        </div>
+        <script>
+            document.getElementById("one3").addEventListener("click", function(){
+                document.querySelector(".popup").style.display = "flex";
+            })
+        
+            document.querySelector(".close").addEventListener("click", function(){
+                document.querySelector(".popup").style.display = "none";
+            })
+        </script>
+</body>
